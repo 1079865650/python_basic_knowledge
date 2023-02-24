@@ -40,7 +40,7 @@ code_url = 'https://so.gushiwen.cn'+code
 # print(code_url)
 # 有坑
 import urllib.request
-urllib.request.urlretrieve(url=code_url,filename='code.jpg')
+urllib.request.urlretrieve(url=code_url, filename='code.jpg')
 # 获取了验证码的图片之后 下载到本地然后观察验证码 观察之后在控制台输入这个验证码 就可以将这个值给code
 # code的参数就可以登录
 code_name = input('请输入你的验证码')

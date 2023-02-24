@@ -22,5 +22,5 @@ response = urllib.request.urlopen(request)
 # 获取响应的数据
 content = response.read().decode('utf-8')
 # 将数据保存到本地
-with open('weibo.html','w',encoding='utf-8') as fp:
+with open('weibo.html', 'w', encoding='utf-8') as fp:
     fp.write(content)

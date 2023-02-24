@@ -18,5 +18,5 @@ handler = urllib.request.ProxyHandler(proxies=proxies)
 opener = urllib.request.build_opener(handler)
 response = opener.open(request)
 content = response.read().decode('utf-8')
-with open('daili.html','w',encoding='utf-8')as fp:
+with open('daili.html', 'w', encoding='utf-8')as fp:
     fp.write(content)

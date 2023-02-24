@@ -20,5 +20,5 @@ proxy = {
 # get参数可以放字典
 response = requests.get(url=url,params=data,headers=headers,proxies=proxy)
 content = response.text
-with open('daili.html','w',encoding='utf-8')as fp:
+with open('daili.html', 'w', encoding='utf-8')as fp:
     fp.write(content)

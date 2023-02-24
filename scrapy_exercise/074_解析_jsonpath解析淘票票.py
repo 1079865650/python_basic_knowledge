@@ -31,12 +31,12 @@ response = urllib.request.urlopen(request)
 content = response.read().decode('utf-8')
 # split 切割
 content = content.split('(')[1].split(')')[0]
-with open('074_解析_jsonpath解析淘票票.json','w',encoding='utf-8')as fp:
+with open('074_解析_jsonpath解析淘票票.json', 'w', encoding='utf-8')as fp:
     fp.write(content)
 # print(content)
 import json
 import jsonpath
 # 参数 不是一个字符串对象 而是一个文件 对象 使用open打开文件创建对象
-obj = json.load(open('074_解析_jsonpath解析淘票票.json','r',encoding='utf-8'))
+obj = json.load(open('074_解析_jsonpath解析淘票票.json', 'r', encoding='utf-8'))
 city_list = jsonpath.jsonpath(obj,'$..regionName')
 print(city_list)

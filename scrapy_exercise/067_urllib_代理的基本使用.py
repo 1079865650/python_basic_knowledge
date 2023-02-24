@@ -23,5 +23,5 @@ response = opener.open(request)
 # 获取响应的信息
 content = response.read().decode('utf-8')
 # 保存
-with open('daili.html','w',encoding='utf-8')as fp:
+with open('daili.html', 'w', encoding='utf-8')as fp:
     fp.write(content)

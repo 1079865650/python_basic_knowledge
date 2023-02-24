@@ -27,6 +27,10 @@ with MailBox('imap.feishu.cn').login('wensong.wang@ziel.cn', mail_pass, initial_
         hbl_file = pattern.search(subject)
         if hbl_file is None:
             continue
+        attach = msg.attachments
+        print(type(attach), "========type(attach)")
+        print(type(attach[0].filename), "========type(attach[0])", attach[0].filename)
+        print(attach, "=======attach")
         uid = msg.uid
         uid_list.append(uid)
         # print(type(mailbox.uids()), "===mailbox")

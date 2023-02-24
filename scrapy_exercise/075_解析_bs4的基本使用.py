@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 # 解析本地文件 来讲bs4基础语法进行讲解
 # 默认打开的文件的编码格式是gbk 所以在打开文件的时候需要制定编码
-soup = BeautifulSoup(open('075_解析_bs4的基本使用.html',encoding='utf-8'),'lxml')
+soup = BeautifulSoup(open('075_解析_bs4的基本使用.html', encoding='utf-8'), 'lxml')
 # 根据标签名字接着查找
 # 找到的是第一个符合条件的数据
 # print(soup.a)
